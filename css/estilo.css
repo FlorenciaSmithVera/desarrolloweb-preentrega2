@@ -1,0 +1,313 @@
+/* ---TIPOGRAFIAS----*/
+/* Solo typo web */
+
+/* Escrito a mano*/
+/* */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+/* Para títulos (grandes y chicos) */
+/* font-family: "Noto Sans", sans-serif; */
+
+/* Para textos */
+/* font-family: "EB Garamond", serif; */
+
+
+/* --------RESETEO-------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ----NAVEGADOR---- */
+
+.navegador a:hover {
+    background-color: #A06B9A;
+}
+
+.nav-format {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.nav-format li {
+    padding: 7px;
+}
+
+
+.navegador .vinetas-chau {
+    background-color: #101020;
+    font-family: "Rock Salt", cursive;
+    list-style-type: none;
+}
+
+.navegador a {
+    text-decoration: none;
+    color: #a3bbad;
+}
+
+/* --------FOOTER-----*/
+
+.footer {
+    background-color: #101020;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul {
+    /* background-color: red; */
+    width: 420px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly
+}
+
+.vinetas-chau li {
+    list-style-type: none;
+}
+
+/* ----TITULOS ESPECIFICOS----*/
+
+#para-siempre {
+    font-family: "Rock Salt", cursive;
+}
+
+h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bolder;
+    font-family: "Rock Salt", cursive;
+}
+
+h3 {
+    font-family: "Rock Salt", cursive;
+    font-size: 15px;
+}
+
+
+/* ----GENERAL STYLE---- */
+
+.general-style {
+    font-family: "EB Garamond", serif;
+}
+
+.general-style a {
+    font-family: "EB Garamond", serif;
+    text-decoration: none;
+    color: #357266;
+}
+
+p {
+    padding: 3px;
+}
+
+/* -------HOME-------*/
+
+.center {
+    text-align: center;
+}
+
+.side-title {
+    font-family: "Rock Salt", cursive;
+}
+
+.margenes-etc {
+    margin: 30px;
+}
+
+.config-fondo {
+    background-color: #1f2041;
+    color: #a3bbad;
+}
+
+#foto-home {
+    text-align: center;
+}
+
+/* ------SU MUSICA---- */
+
+.spoti-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+        "primera-cita cnco"
+        "qqs deja-vu"
+        "xoxo xoxo";
+}
+
+.primera-cita {
+    grid-area: primera-cita;
+}
+
+.cnco {
+    grid-area: cnco;
+}
+
+.qqs {
+    grid-area: qqs;
+}
+
+.deja-vu {
+    grid-area: deja-vu;
+}
+
+.xoxo {
+    grid-area: xoxo;
+}
+
+/* ------CARRERAS SOLISTAS------ */
+
+.grid-solistas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "name-pic redes";
+}
+
+.name-pic {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: name-pic;
+}
+
+.name-pic h4 {
+    padding: 10px;
+}
+
+.redes {
+    grid-area: redes;
+}
+
+.grid-solistas2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "redes2 name-pic2";
+}
+
+.name-pic2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    grid-area: name-pic2;
+}
+
+.name-pic2 h4 {
+    padding: 10px;
+}
+
+.redes2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: redes2;
+}
+
+.solistas {
+    overflow: hidden;
+    border-radius: 100px;
+    width: 250px;
+    height: auto;
+}
+
+#erick {
+    height: 150px;
+}
+
+.solistas-tit {
+    padding: 30px;
+}
+
+/* ----CONTACTO----- */
+
+.form {
+    background-color: #357266;
+    color: #a3bbad;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    background-image: url('../resources/pictures/fondo-contacto.jpg');
+    background-size: cover;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        "caja1 caja1 caja2 caja2"
+        "caja1 caja1 caja2 caja2"
+    ;
+}
+
+.form-caja {
+    /* background-color: blue; */
+    grid-area: caja1;
+}
+
+.foto-form {
+    /* background-color: aqua; */
+    grid-area: caja2;
+    display: flex;
+    justify-content: center;
+}
+
+.foto-form img {
+    width: 500px;
+    padding: 20px 20px;
+    margin: 30px 30px;
+}
+
+
+/* RESPONSIVE - MOBILE LAST */
+
+@media (max-width: 564px) {
+    .grid-solistas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "name-pic"
+            "redes";
+    }
+
+    .name-pic {
+        display: flex;
+        justify-content: center;
+        grid-area: name-pic;
+    }
+
+    .grid-solistas2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "name-pic2"
+            "redes2";
+    }
+
+    .name-pic2 {
+        display: flex;
+        justify-content: center;
+        grid-area: name-pic2;
+    }
+}
+
+@media (max-width: 642px) {
+
+    .spoti-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (5 1fr);
+        gap: 10px 10px;
+        grid-template-areas:
+            "primera-cita"
+            "cnco"
+            "qqs"
+            "deja-vu"
+            "xoxo";
+    }
+
+}
